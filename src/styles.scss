@@ -1,0 +1,52 @@
+@import 'fonts';
+@import 'scroller';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: '000webfont', serif;
+  color: #04573c;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+body {
+  font-family: 'virale', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: #ecbfe5;
+  background-image: url('assets/images/Rainbow.png');
+  background-size: auto;
+}
+
+button {
+  font-family: virale, monospace;
+  color: #ec05c6;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    color: #8d0278;
+    background-color: #efbbe4;
+  }
+}
