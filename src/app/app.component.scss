@@ -24,8 +24,8 @@
   grid-area: main;
   background-color: #eeeeee;
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: calc(100% - 6px - 32px);
+  width: calc(100% - 6px - 32px);
   border-radius: 16px;
   border: 3px solid hotpink;
   overflow: auto;
@@ -56,6 +56,21 @@
       top: -24px;
       right: 4px;
       font-family: basiic, monospace;
+    }
+  }
+}
+
+.right {
+  grid-area: right;
+  padding: 8px;
+
+  .navbar {
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 8px;
+    > * {
+      margin: 3px 0;
     }
   }
 }

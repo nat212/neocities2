@@ -13,3 +13,8 @@
 <div class="main-page">
   <router-outlet></router-outlet>
 </div>
+<div class="right">
+  <nav class="navbar">
+    <a *ngFor="let link of navbarLinks" [routerLink]="link.path" routerLinkActive="active">{{ link.label }}</a>
+  </nav>
+</div>
