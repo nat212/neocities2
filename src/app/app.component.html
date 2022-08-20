@@ -9,12 +9,31 @@
       <button class="quote-button" (click)="refreshQuote()">New</button>
     </div>
   </div>
+  <hr class="rainbow" />
+  <div class="deets">
+    <span class="deets-label">Mood</span>
+    <a href="https://www.imood.com/users/natash" target="_blank">
+      <img
+        src="https://moods.imood.com/display/uname-natash/fg-04573c/trans-1/imood.gif"
+        alt="The current mood of natash at www.imood.com"
+      />
+    </a>
+    <span class="deets-label">Site Hits</span>
+    <a href="https://www.websiteout.net/counter.php" target="_blank">
+      <img src="{{ hitsImgUrl }}" alt="web hit counter" />
+    </a>
+  </div>
 </div>
 <div class="main-page">
   <router-outlet></router-outlet>
 </div>
 <div class="right">
   <nav class="navbar">
-    <a *ngFor="let link of navbarLinks" [routerLink]="link.path" routerLinkActive="active">{{ link.label }}</a>
+    <a
+      *ngFor="let link of navbarLinks"
+      [routerLink]="link.path"
+      routerLinkActive="active"
+      >{{ link.label }}</a
+    >
   </nav>
 </div>

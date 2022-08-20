@@ -26,6 +26,8 @@ export class AppComponent implements OnInit, OnDestroy {
     { label: 'Credits', path: '/credits' },
   ];
 
+  constructor() {}
+
   ngOnInit() {
     this.refreshQuote();
     this.unsubscribe$ = new Subject();
@@ -33,6 +35,16 @@ export class AppComponent implements OnInit, OnDestroy {
     interval(this.quoteInterval)
       .pipe(takeUntil(this.unsubscribe$))
       .subscribe(() => this.refreshQuote(true));
+  }
+
+  get hostname(): string {
+    return window.location.hostname;
+  }
+
+  get hitsImgUrl(): string {
+    return `//counter.websiteout.net/compte.php?S=${encodeURI(
+      this.hostname
+    )}&C=20&D=0&N=0&M=0`;
   }
 
   ngOnDestroy() {

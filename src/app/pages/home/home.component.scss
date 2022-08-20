@@ -1,0 +1,32 @@
+#statuscafe {
+  padding: 0.5em;
+  background-color: azure;
+  border: 1px solid hotpink;
+}
+#statuscafe-username {
+  margin-bottom: 0.5em;
+}
+#statuscafe-content {
+  margin: 0 1em 0.5em 1em;
+}
+
+.intro {
+  display: flex;
+  flex-flow: row nowrap;
+  > img {
+    margin-right: 2rem;
+  }
+}
+
+.heading {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  img:first-child {
+    margin-right: 1rem;
+  }
+  img:last-child {
+    margin-left: 1rem;
+  }
+}
