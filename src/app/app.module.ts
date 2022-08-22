@@ -10,6 +10,7 @@ import { ShrinesComponent } from './pages/shrines/shrines.component';
 import { AppsComponent } from './pages/apps/apps.component';
 import { GamesComponent } from './pages/games/games.component';
 import { CreditsComponent } from './pages/credits/credits.component';
+import { PageHeaderComponent } from './components/page-header/page-header.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CreditsComponent } from './pages/credits/credits.component';
     AppsComponent,
     GamesComponent,
     CreditsComponent,
+    PageHeaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

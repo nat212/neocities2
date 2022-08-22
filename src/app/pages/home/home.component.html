@@ -1,8 +1,4 @@
-<h4 class="heading">
-  <img src="assets/images/heart.gif" alt="bouncing heart" />
-  Welcome to my space!
-  <img src="assets/images/heart.gif" alt="bouncing heart" />
-</h4>
+<app-page-header> Welcome to my space! </app-page-header>
 <div class="intro">
   <img src="assets/images/rainbowbfly.gif" alt="rainbow butterfly" />
   <p>
@@ -10,6 +6,9 @@
     me! This is an LGBT+ friendly space, ACAB, Black Lives Matter, TERFs will be
     deleted from existence with my godlike powers.
   </p>
+</div>
+<div class="blinkies">
+  <img *ngFor="let blinky of blinkies" src="assets/blinkies/{{ blinky }}" />
 </div>
 <hr />
 

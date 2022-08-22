@@ -1,1 +1,38 @@
-<h2>About Me!</h2>
+<app-page-header> About me! </app-page-header>
+<div class="intro">
+  <img src="assets/images/face.jpeg" alt="My face" class="profile" />
+  <div>
+    <p>
+      I'm Natasha, a 24 year old trans software developer focusing on frontend
+      &amp; design. My speciality is
+      <a href="https://angular.io" target="_blank">Angular</a>, which is what I
+      used to build this site!
+    </p>
+    <p>
+      I made this site because I was a young child during the height of the old
+      web, and I fell in love with all those cutesy, pixelated sites. I was too
+      young at the time to actually make one of my own, but when I found
+      neocities, I feel down a rabbit hole which led to the creation of this
+      space.
+    </p>
+  </div>
+</div>
+<hr />
+<app-page-header> Other places you can find me! </app-page-header>
+<table class="links-table">
+  <tr *ngFor="let link of links" (click)="anchor.click()">
+    <td>
+      <i class="{{ link.icon }}"></i>
+    </td>
+    <td>
+      <a #anchor href="{{ link.url }}" target="_blank">{{ link.label }}</a>
+    </td>
+  </tr>
+</table>
+<p>
+  If you want to get in touch with me, you can email me at
+  <a href="mailto:natasha@draper.net.za">natasha@draper.net.za</a>!
+</p>
+<p>
+  You can also find me on Discord at <span class="discord">Natasha#2578</span>
+</p>

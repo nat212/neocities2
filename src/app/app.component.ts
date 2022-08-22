@@ -19,7 +19,6 @@ export class AppComponent implements OnInit, OnDestroy {
   navbarLinks: NavbarLink[] = [
     { label: 'Home', path: '/' },
     { label: 'About me', path: '/about' },
-    { label: 'Get in touch', path: '/contact' },
     { label: 'Shrines', path: '/shrines' },
     { label: "Apps I've made", path: '/apps' },
     { label: "Games I've made", path: '/games' },

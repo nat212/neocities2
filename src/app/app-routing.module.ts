@@ -25,11 +25,6 @@ const routes: Routes = [
     data: { title: 'About' },
   },
   {
-    path: 'contact',
-    component: ContactComponent,
-    data: { title: 'Contact' },
-  },
-  {
     path: 'shrines',
     component: ShrinesComponent,
     data: { title: 'Shrines' },

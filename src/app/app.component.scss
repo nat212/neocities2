@@ -19,6 +19,15 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
+
+  img {
+    margin: 0 24px;
+  }
+
+  .earth {
+    height: 50px;
+  }
 }
 
 .main-page {
@@ -88,6 +97,7 @@
     background-color: rgba(paleturquoise, 0.5);
     a {
       color: rebeccapurple;
+      text-transform: lowercase;
     }
     border-radius: 12px;
     border: 1px solid teal;

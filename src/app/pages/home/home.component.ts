@@ -6,6 +6,8 @@ import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  blinkies = ['trnsrits.gif', 'bed.gif', 'blinky_38.gif', 'cat.gif'];
+
   constructor(
     private readonly renderer: Renderer2,
     private readonly el: ElementRef<HTMLElement>

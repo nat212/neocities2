@@ -13,20 +13,15 @@
 .intro {
   display: flex;
   flex-flow: row nowrap;
+  margin-bottom: 24px;
   > img {
     margin-right: 2rem;
   }
 }
 
-.heading {
+.blinkies {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  img:first-child {
-    margin-right: 1rem;
-  }
-  img:last-child {
-    margin-left: 1rem;
-  }
 }
